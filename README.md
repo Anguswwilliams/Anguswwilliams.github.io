@@ -1,4 +1,4 @@
-# My portfolio website
+# My website
 
 ## https://anguswwilliams.github.io/
 ## https://anguswwilliams.github.io/practice/terminal.html
