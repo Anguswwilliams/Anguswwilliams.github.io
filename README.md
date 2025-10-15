@@ -16,4 +16,4 @@ https://anguswwilliams.github.io/projects/recipes/2.html
 
 https://anguswwilliams.github.io/projects/recipes/1.html
 
-https://anguswwilliams.github.io/tree/main/practice
+](https://anguswwilliams.github.io/practice/network_notes.html)
