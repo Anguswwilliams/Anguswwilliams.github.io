@@ -1,19 +1,27 @@
-# My website about trees
+# This is how you write a title
 
-https://anguswwilliams.github.io/
+## Subheading
 
-https://anguswwilliams.github.io/practice/terminal.html
+### h3
 
-https://anguswwilliams.github.io/practice/table.html
+#### h4
 
-https://anguswwilliams.github.io/practice/minimal.html
+##### h5
 
-https://anguswwilliams.github.io/practice/schedule.html
+###### h6
 
-https://anguswwilliams.github.io/projects/recipes/index.html
+Normal text
 
-https://anguswwilliams.github.io/projects/recipes/2.html
+*List
 
-https://anguswwilliams.github.io/projects/recipes/1.html
+*List
 
-](https://anguswwilliams.github.io/practice/network_notes.html)
+*List
+
+1. List
+
+2. List
+
+3. List
+
+**Bold**
