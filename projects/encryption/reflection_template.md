@@ -18,10 +18,10 @@ and the messages that you received.
 
 | Encoded Message | Decoded Message | Key |
 | --------------- | --------------- | --- |
-|                 |                 |     |
-|                 |                 |     |
-|                 |                 |     |
-|                 |                 |     |
+| vszzc w oa xoasg dsffm                 |                 |     |
+| pmtt ug vium qa ivoca                |                 |     |
+| G lccb dgtc fslbpcb bmjjypq dmp yl gltcqrkclr gl Kcvgayl rgkc qfypcq.                |                 |     |
+| uibdt dppm                |                 |     |
 
 
 ## Part 3: Connection to TCP/IP Model
