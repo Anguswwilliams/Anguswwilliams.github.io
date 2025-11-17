@@ -12,10 +12,10 @@ Our initial shared key:
 
 | Encoded Message | Decoded Message | Key |
 | --------------- | --------------- | --- |
-| vszzc w oa xoasg dsffm                 | hello i am james perry                |     |
-| pmtt ug vium qa ivoca                | hello my name is angus                |     |
-| G lccb dgtc fslbpcb bmjjypq dmp yl gltcqrkclr gl Kcvgayl rgkc qfypcq.                | I need five hundred dollars for an investment in Mexican time shares.                |     |
-| uibdt dppm                |thats cool                 |     |
+| vszzc w oa xoasg dsffm                 | hello i am james perry                | 14    |
+| pmtt ug vium qa ivoca                | hello my name is angus                | 8    |
+| G lccb dgtc fslbpcb bmjjypq dmp yl gltcqrkclr gl Kcvgayl rgkc qfypcq.                | I need five hundred dollars for an investment in Mexican time shares.                | 2    |
+| uibdt dppm                |thats cool                 | 1    |
 
 
 ## Part 3: Connection to TCP/IP Model
