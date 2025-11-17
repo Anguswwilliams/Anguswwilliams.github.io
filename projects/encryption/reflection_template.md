@@ -10,18 +10,12 @@ Our initial shared key:
 
 ## Part 2: Messaging
 
-Complete this table with each of your messages. This should 
-include the entire conversation - the messages that you sent
-and the messages that you received.
-
-(If you used something other than the caesar cipher here, describe what you did)
-
 | Encoded Message | Decoded Message | Key |
 | --------------- | --------------- | --- |
-| vszzc w oa xoasg dsffm                 |                 |     |
-| pmtt ug vium qa ivoca                |                 |     |
-| G lccb dgtc fslbpcb bmjjypq dmp yl gltcqrkclr gl Kcvgayl rgkc qfypcq.                |                 |     |
-| uibdt dppm                |                 |     |
+| vszzc w oa xoasg dsffm                 | hello i am james perry                |     |
+| pmtt ug vium qa ivoca                | hello my name is angus                |     |
+| G lccb dgtc fslbpcb bmjjypq dmp yl gltcqrkclr gl Kcvgayl rgkc qfypcq.                | I need five hundred dollars for an investment in Mexican time shares.                |     |
+| uibdt dppm                |thats cool                 |     |
 
 
 ## Part 3: Connection to TCP/IP Model
