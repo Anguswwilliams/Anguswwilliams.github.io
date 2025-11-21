@@ -1,0 +1,8 @@
+table, tr, th, td{
+	border: 3px purple;
+	border-collapse: collapse;
+}
+body{
+	background-color: darkgreen
+}
+
