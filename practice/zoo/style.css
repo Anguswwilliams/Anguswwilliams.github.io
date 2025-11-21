@@ -3,6 +3,8 @@ table, tr, th, td{
 	border-collapse: collapse;
 }
 body{
-	background-color: darkgreen
+	background-color: darkgreen;
 }
-
+#info{
+ background-color: darkred;
+}
