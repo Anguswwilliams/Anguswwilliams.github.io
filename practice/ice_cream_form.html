@@ -8,10 +8,47 @@
 <form action="https://httpbin.org/post" method="post">
 <label for="email">Enter your email:</label>
 <input type="email" name="email">
-<button type="submit">Submit</button>
 <br>
 <label for="phone">Enter your phone number:</label>
 <input type="tel" name="phone">		
 <br>
+<label for="number">How many people will you bring to the party?:</label>
+<input type="number" name="age" min="0">
+<br>
+<label for="text">What is your name?:</label>
+<input type="text" name="yourname">
+<br>
+<label for="radio">What is your favorite flavor of ice cream?:</label>
+<input type="radio" name="flavor" value="chocolate"> Chocolate
+<input type="radio" name="flavor" value="vanilla"> Vanilla
+<input type="radio" name="flavor" value="strawberry"> Strawberry
+<input type="radio" name="flavor" value="mint chip"> Mint Chip
+<br>
+<p>What toppings do you like?:</p>
+<input type="checkbox" name="chocolate chips" value="chocolate chips">
+<label for="chocolate chips">Chocolate Chips</label>
+<br>
+<input type="checkbox" name="sprinkles" value="sprinkles">
+<label for="sprinkles">Sprinkles</label>
+<br>
+<input type="checkbox" name="oreo crumble" value="oreo crumble">
+<label for="oreo crumble">Oreo Crumble</label>
+<br>
+<input type="checkbox" name="gummy bears" value="gummy bears">
+<label for="gummy bears">Gummy Bears</label>
+<br>
+<input type="checkbox" name="plain" value="plain">
+<label for="plain">Plain</label>
+<br>
+<label for="entertainment">What kind of entertainment should we have at the party?</label>
+<select name="choose">
+<option value="disco">Disco</option>
+<option value="food">Food</option>
+<option value="music">Music</option>
+<option value="magic show">Magic Show</option>
+<option value="bouncy house">Bouncy House</option>
+</select>
+<br>
+<button type="submit">Submit</button>
 </body>
 </html>
