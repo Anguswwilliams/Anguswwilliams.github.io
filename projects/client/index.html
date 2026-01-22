@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
 <title>Native Plants of Virginia</title>
 <link href="/style.css" rel="stylesheet" type="text/css" media="all">
 <style>
@@ -49,10 +50,54 @@ grid-area: menu3;
 #foot{
 grid-area: foot;
 align-items: center;
+=======
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Native Plants Of Virginia</title>
+    <link rel="stylesheet" href="index.css">
+<style>
+.grid {
+display: grid;
+height: 100vh;
+grid:
+    'head1  head2 head3' 1fr
+    'menu1  menu2 menu3' 3fr
+    'foot foot foot' 1fr
+    /1fr 3fr 1fr;
+}
+#header1{
+grid-area: head2;
+color: white;
+font-size: 100px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: green;
+}
+#menu2{
+grid-area: menu2;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;  
+}
+#menu3{
+grid-area: menu3;
+color: #FF69B4;
+}
+#menu1{
+grid-area: menu1;
+color: #FF69B4;
+}
+#foot{
+grid-area: foot;
+font-size: 100px;
+>>>>>>> 61fd9e4 (edrgt)
 }
 </style>
 </head>
 <body>
+<<<<<<< HEAD
  <div class="grid">
 
   <header id="header" style="text-align: center; font-size: 34px;">
@@ -85,3 +130,14 @@ align-items: center;
  </div>
 </body>
 </html>
+=======
+<div class="grid">
+    <div id="header1" style="text-align: center;">Native Plants Of Virginia</div>
+    <div id="menu1">Home</div>
+    <div id="menu2">About</div>
+    <div id="menu3">Contact</div>
+    <div id="foot">© 2024 Native Plants Of Virginia</div>
+</div>
+</body>
+</html>
+>>>>>>> 61fd9e4 (edrgt)
