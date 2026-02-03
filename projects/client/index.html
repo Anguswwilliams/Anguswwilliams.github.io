@@ -1,1 +1,87 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Native Flora of Virginia</title>
+<link href="/style.css" rel="stylesheet" type="text/css" media="all">
+<style>
+body {
+  margin: 0;
+}
+.grid {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    'header header header'
+    'menu1 menu2 menu3'
+    'foot foot foot';
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
+
+  gap: 2px;
+  background: black;
+}
+
+.grid > * {
+  background: #278c27;
+  padding: 15px;
+}
+#header { grid-area: header; }
+#menu1  { grid-area: menu1; }
+#menu2  { grid-area: menu2; }
+#menu3  { grid-area: menu3; }
+#foot   { grid-area: foot; }
+
+#header{
+grid-area: header;
+}
+#menu1{
+grid-area: menu1;
+}
+#menu2{
+grid-area: menu2;
+display: flex;
+align-items: flex-start;
+gap: 16px;
+}
+#menu3{
+grid-area: menu3;
+}
+#foot{
+grid-area: foot;
+align-items: center;
+}
+</style>
+</head>
+<body>
+ <div class="grid">
+
+  <header id="header" style="text-align: center; font-size: 34px;">
+   <b><h1>Native Flora of Virginia</h1></b>
+  </header>
+
+  <div id="menu1">
+   <h2 style="text-align: center;">Plants</h2>
+   <p style="font-size: 15px;">Native plants in Virginia include wildflowers, grasses, and shrubs that are native to the region. Some of these plants serve as a source of food for pollinators and wildlife. Native grasses in Virginia help to stabilize the soil and improve the quality of water in open areas and along water bodies. Native plants in Virginia help to create ecosystems that can thrive without any human intervention.</p>
+   <br>
+   <a href="plants.html" style="background-color: yellow; color: black; font-size: 17px;">Click here to learn more about the native plants of virginia</a>
+  </div>
+
+  <div id="menu2">
+   <img src="media/plants/Blazing_Star.jpg" alt="Blazing Star Plant" width="300" height="380">
+   <p style="font-size: 22px;">Identifying native plants is significant since they form the base of the local environment and have co-evolved with native wildlife and environmental factors. Native plants offer the best food and habitat for local wildlife such as insects and birds. These plants are usually more adapted to the environment and therefore require less water and maintenance compared to non-native species. It is essential to appreciate and understand native plants since this will help us avoid the spread of invasive species, which may result in negative effects on biodiversity and ecosystems.</p>
+  </div>
+
+  <div id="menu3">
+   <h2 style="text-align: center;">Trees</h2>
+   <p style="font-size: 15px;">Virginia's native trees are as diverse as the climates and landscapes in the state. There are trees that are native to the coastal plains and mountain forests. There are deciduous and evergreen native trees that are native to Virginia. These native trees are very important in maintaining soil stability and providing support for wildlife. There are diverse forest ecosystems that are native to Virginia.</p>
+   <br>
+   <a href="trees.html" style="background-color: yellow; color: black; font-size: 17px;">Click here to learn more about the native trees of virginia</a>
+  </div>
+
+  <footer id="foot">
+   <p>&copy; 2025 Angus Williams</p>
+  </footer>
+
+ </div>
+</body>
+</html>
