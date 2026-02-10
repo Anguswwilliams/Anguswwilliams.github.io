@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+<title>Canvas</title>
+<style>
+canvas{
+ border: black 1px solid;
+}
+</style>
+</head>
+<body>
+<canvas id="canvas" width="800" height="800">
+</canvas>
+<script>
+const canvas = document.getElemntById("canvas");
+const ctx = canvas.getContext("2d");
+
+// Draw a green rectangle
+ctx.fillStyle = "green";
+ctx.fillRect(100, 100, 200, 300);
+
+// A small red square twoards the top middle
+ctx.fillStyle = "red";
+ctx.fillRect(350, 50, 50, 50);
+</script>
+</body>
+</html>
