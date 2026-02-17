@@ -1,14 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Self Portrait</title>
-  <style>
-  canvas {
-    border: 2px solid black;
-  }
-</style>
-</head>
+<html>
 <body>
-  <canvas width="800" height="800"></canvas>
+<canvas id="canvas" width="800" height="800"></canvas>
+
+<script>
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+
+ctx.beginPath();
+ctx.arc(400, 200, 60, 0, Math.PI * 2);
+ctx.fillStyle = "#f5c6a5";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(380, 190, 8, 0, Math.PI * 2);
+ctx.fillStyle = "black";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(420, 190, 8, 0, Math.PI * 2);
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(400, 220, 20, 0, Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.rect(340, 140, 120, 40);
+ctx.fillStyle = "brown";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(400, 350, 90, 0, Math.PI * 2);
+ctx.fillStyle = "blue";
+ctx.fill();
+
+ctx.beginPath();
+ctx.rect(210, 320, 190, 40);
+ctx.fill();
+
+ctx.beginPath();
+ctx.rect(400, 320, 190, 40);
+ctx.fill();
+
+ctx.beginPath();
+ctx.rect(360, 440, 35, 180);
+ctx.fillStyle = "black";
+ctx.fill();
+
+ctx.beginPath();
+ctx.rect(405, 440, 35, 180);
+ctx.fill();
+
+ctx.beginPath();
+ctx.rect(350, 620, 50, 20);
+ctx.fillStyle = "brown";
+ctx.fill();
+
+ctx.beginPath();
+ctx.rect(400, 620, 50, 20);
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(180, 340, 8, 0, Math.PI * 2);
+ctx.fillStyle = "#f5c6a5";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(170, 340, 8, 0, Math.PI * 2);
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(160, 340, 8, 0, Math.PI * 2);
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(150, 340, 8, 0, Math.PI * 2);
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(140, 340, 8, 0, Math.PI * 2);
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(620, 340, 8, 0, Math.PI * 2);
+ctx.fillStyle = "#f5c6a5";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(630, 340, 8, 0, Math.PI * 2);
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(640, 340, 8, 0, Math.PI * 2);
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(650, 340, 8, 0, Math.PI * 2);
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(660, 340, 8, 0, Math.PI * 2);
+ctx.fill();
+
+</script>
 </body>
 </html>
