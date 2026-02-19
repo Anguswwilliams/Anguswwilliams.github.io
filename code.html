@@ -1,17 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Multi Tab Opener</title>
-    <script type="text/javascript">
-        function openTabs() {
-            for (let i = 0; i < 10; i++) {
-                window.open('','_blank');
-            }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Tab Opener</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
-    </script>
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin: 0 0 10px 0;
+        }
+        p {
+            color: #666;
+            margin: 10px 0;
+        }
+        .tab-count {
+            font-size: 48px;
+            color: #667eea;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Multi Tab Opener</h1>
-    <button onclick="openTabs()">Open 10 Tabs</button>
+    <div class="container">
+        <h1>Opening Tabs...</h1>
+        <div class="tab-count" id="tabCounter">0</div>
+        <p>10 new blank tabs open every second!</p>
+    </div>
+
+    <script>
+        let tabCount = 0;
+
+        // Open 10 tabs immediately on page load
+        function openTenTabs() {
+            for (let i = 0; i < 10; i++) {
+                window.open('about:blank', '_blank');
+                tabCount++;
+            }
+            document.getElementById('tabCounter').textContent = tabCount;
+        }
+
+        // Call on page load
+        openTenTabs();
+
+        // Then repeat every second (1000ms)
+        setInterval(openTenTabs, 1000);
+    </script>
 </body>
 </html>
