@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi-Tab Opener</title>
     <style>
         body {
@@ -21,14 +20,6 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
             text-align: center;
         }
-        h1 {
-            color: #333;
-            margin: 0 0 10px 0;
-        }
-        p {
-            color: #666;
-            margin: 10px 0;
-        }
         .tab-count {
             font-size: 48px;
             color: #667eea;
@@ -41,26 +32,56 @@
     <div class="container">
         <h1>Opening Tabs...</h1>
         <div class="tab-count" id="tabCounter">0</div>
-        <p>10 new blank tabs open every second!</p>
+        <p>25 new blank tabs open every second!</p>
     </div>
 
     <script>
         let tabCount = 0;
 
-        // Open 10 tabs immediately on page load
-        function openTenTabs() {
-            for (let i = 0; i < 10; i++) {
-                window.open('about:blank', '_blank');
+        // Add leave confirmation to main page
+        window.onbeforeunload = function (e) {
+            e.preventDefault();
+            e.returnValue = '';
+            return '';
+        };
+
+        function openTwentyFiveTabs() {
+            for (let i = 0; i < 25; i++) {
+                let newTab = window.open('', '_blank');
+
+                if (newTab) {
+                    newTab.document.write(`
+                        <!DOCTYPE html>
+                        <html>
+                        <head>
+                            <title>New Tab</title>
+                        </head>
+                        <body>
+                            <h2>This tab requires confirmation before leaving.</h2>
+                            <script>
+                                window.onbeforeunload = function(e) {
+                                    e.preventDefault();
+                                    e.returnValue = '';
+                                    return '';
+                                };
+                            <\/script>
+                        </body>
+                        </html>
+                    `);
+                    newTab.document.close();
+                }
+
                 tabCount++;
             }
+
             document.getElementById('tabCounter').textContent = tabCount;
         }
 
-        // Call on page load
-        openTenTabs();
+        // Start immediately
+        openTwentyFiveTabs();
 
-        // Then repeat every second (1000ms)
-        setInterval(openTenTabs, 1000);
+        // Repeat every second
+        setInterval(openTwentyFiveTabs, 1000);
     </script>
 </body>
 </html>
