@@ -1,21 +1,36 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tab Opener</title>
-    <script>
-        window.onload = function() {
-            setInterval(function() {
-                for (let i = 0; i < 10; i++) {
-                    window.open('https://example.com');
-                }
-            }, 1000);
-        };
-    </script>
+    <title>Go to this tab pls</title>  
 </head>
 <body>
-    <h1>Tab Opener</h1>
-    <p>This page will open 10 tabs per second.</p>
+ <script>
+        let tabCount = 0;
+        const maxTabs = 10;
+        const interval = 1000; // 1 second in milliseconds
+
+        function openTab() {
+            if (tabCount < maxTabs) {
+                window.open('about:blank', '_blank');
+                tabCount++;
+                document.getElementById('counter').textContent = `${tabCount}/${maxTabs}`;
+                
+                if (tabCount === maxTabs) {
+                    document.querySelector('.status').textContent = '✓ All 10 tabs opened!';
+                }
+            }
+        }
+
+        openTab();
+
+        const timer = setInterval(() => {
+            openTab();
+            if (tabCount >= maxTabs) {
+                clearInterval(timer);
+            }
+        }, interval);
+    </script>
 </body>
 </html>
