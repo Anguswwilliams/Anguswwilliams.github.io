@@ -1,4 +1,4 @@
-function addToBody(text){                                                  
+function addToBody(text){
     document.body.innerHTML += "<p>" + text + "</p>";
 }
 
@@ -8,6 +8,8 @@ temp = Number(temp);
 if(temp < 32){
     addToBody("Its freezing! Watch out for ice!");
 }
-else{
-    addToBody("not freezing");
+else if(temp < 80){
+    addToBody("Take a walk outside!");
+}else{
+    addToBody("Go to the beach!");
 }
