@@ -29,14 +29,31 @@ function locationB() {
     clear();
     print("\nYou are in location B!");
     print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tlocationA");
+        "\n\tlocationC");
     
     function processInput(input){
-        if (input.toLowerCase() === "locationa") {
-            locationA();
+        if (input.toLowerCase() === "locationc") {
+            locationC();
         } else {
             stayHere();
             waitThenCall(locationB);
+        }
+    }
+    waitForInput(processInput);
+}
+
+function locationC() {
+    clear();
+    print("\nYou are in location C!");
+    print("\nWhere do you want to go next? Say one of these choices:" +
+        "\n\tlocationB");
+    
+    function processInput(input){
+        if (input.toLowerCase() === "locationb") {
+            locationB();
+        } else {
+            stayHere();
+            waitThenCall(locationC);
         }
     }
     waitForInput(processInput);
