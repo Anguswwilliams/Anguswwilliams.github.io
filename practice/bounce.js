@@ -10,6 +10,12 @@ function move(){
     ctx.clearRect(0,0,800,800);
     x = x + vx;
     y = y + vy;
+    if(x > 740 || x < 0){
+        vx = vx * -1;
+    }
+      if(y > 740 || y < 0){
+        vy = vy * -1;
+    }
     ctx.fillRect(X,y,50,50);
     requestAnimationFrame(move);
 }
