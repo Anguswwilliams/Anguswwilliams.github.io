@@ -3,8 +3,8 @@ let gameActive = true;
 function classroom() {
     clear();
 
-    print("After the earthquake you were trapped inside Brickston High School.");
-    print("The front entrance collapsed. You must find another way out.");
+    print("After the earthquake you are trapped inside Brickston High School.");
+    print("The front entrance has collapsed. You must find another way out.");
 
     print("");
     print("Where do you want to go?");
@@ -26,11 +26,11 @@ function hallway() {
     clear();
 
     print("You step into a dank hallway.");
-    print("A shaft of light shines through a small crack the broken roof.");
-    print("There are only 3 doors that are not caved in.");
+    print("A shaft of light shines through a small crack in the broken roof.");
+    print("There are only three doors that are not caved in.");
 
     print("");
-    print("Choose a location to go to");
+    print("Choose a location to go to:");
     print("library");
     print("commons");
     print("box");
@@ -58,23 +58,16 @@ function library() {
     clear();
 
     print("You enter the library.");
-    print("The books are on fire and you spot a small golden key in the far corner of the room...");
+    print("The books are on fire and you spot a small golden key in the far corner of the room.");
+    print("This room does not lead anywhere else.");
 
     print("");
-    print("Where do you want to go?");
-    print("science");
-    print("hallway");
+    print("Type hallway to return.");
 
     waitForInput(function(input){
-        input = input.toLowerCase();
-
-        if (input === "hallway") {
+        if (input.toLowerCase() === "hallway") {
             hallway();
-        }
-        else if (input === "science") {
-            scienceroom();
-        }
-        else {
+        } else {
             stayHere();
             waitThenCall(library);
         }
@@ -86,43 +79,17 @@ function commons() {
 
     print("The commons area is completely destroyed.");
     print("Tables are flipped over and debris blocks all the exits.");
+    print("There is no way forward here.");
 
     print("");
-    print("Only one path remains...");
-    print("library");
+    print("Type hallway to return.");
 
     waitForInput(function(input){
-        input = input.toLowerCase();
-
-        if (input === "library") {
-            library();
-        }
-        else {
+        if (input.toLowerCase() === "hallway") {
+            hallway();
+        } else {
             stayHere();
             waitThenCall(commons);
-        }
-    });
-}
-
-function scienceroom() {
-    clear();
-
-    print("You enter the science room.");
-    print("A small chemical fire burns under one of the lab tables.");
-
-    print("");
-    print("Where do you want to go?");
-    print("library");
-
-    waitForInput(function(input){
-        input = input.toLowerCase();
-
-        if (input === "library") {
-            library();
-        }
-        else {
-            stayHere();
-            waitThenCall(scienceroom);
         }
     });
 }
@@ -130,17 +97,21 @@ function scienceroom() {
 function thebox() {
     clear();
 
-    print("You enter the the box.");
-    print("The ceiling is collapsed and blocks the exit.");
+    print("You enter the gym, known as the Box.");
+    print("The ceiling is collapsed, but there is a large window that is cracked and climbable.");
 
     print("");
-    print("You must return to the hallway.");
+    print("Where do you want to go?");
+    print("window");
     print("hallway");
 
     waitForInput(function(input){
         input = input.toLowerCase();
 
-        if (input === "hallway") {
+        if (input === "window") {
+            winGame();
+        }
+        else if (input === "hallway") {
             hallway();
         }
         else {
@@ -150,9 +121,21 @@ function thebox() {
     });
 }
 
+function winGame() {
+    clear();
+
+    print("You climb through the window.");
+    print("Fresh air rushes inward as you jump out the window.");
+    print("");
+    print("You win :D");
+
+    gameActive = false;
+}
+
 function start(){
+    clear();
     print("Escape From School.");
-    print("Type enter to begin.");
+    print("Press enter to begin.");
 
     waitForInput(function(){
         classroom();
