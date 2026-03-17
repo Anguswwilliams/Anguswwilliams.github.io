@@ -64,16 +64,16 @@ function library() {
 
 function commons() {
     clear();
-    print("\nYou are in location C!");
+    print("\nAll of the tables are flipped over and backpacks are strewn about, its clear there's no escaping this way");
     print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tlocationB");
+        "\n\tlibrary");
     
     function processInput(input){
-        if (input.toLowerCase() === "locationb") {
-            locationB();
+        if (input.toLowerCase() === "library") {
+            library();
         } else {
             stayHere();
-            waitThenCall(locationC);
+            waitThenCall(commons);
         }
     }
     waitForInput(processInput);
