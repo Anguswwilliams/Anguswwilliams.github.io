@@ -22,16 +22,22 @@ function hallway() {
     clear();
     print("\nYou exit the room and find yourself in a dark hallway, there is a faint shaft of light peeking out from what used to be the roof, and you see four open doors that are not caved in.");
     print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tlocationC");
     
+    print("\n\tLibrary");
+    print("\n\the box");
+    print("\n\the commons");
+
     function processInput(input){
-        if (input.toLowerCase() === "locationc") {
-            locationC();
+        if (input.toLowerCase() === "library") {
+            library();
+        } else (input.toLowerCase() === "the box") {
+            gym();
+        } else (input.toLowerCase() === "commons") 
+            cafeteria();
         } else {
             stayHere();
-            waitThenCall(locationB);
+            waitThenCall(hallway)
         }
-    }
     waitForInput(processInput);
 }
 
