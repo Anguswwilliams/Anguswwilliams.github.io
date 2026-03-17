@@ -38,6 +38,7 @@ function hallway() {
             stayHere();
             waitThenCall(hallway)
         }
+}
     waitForInput(processInput);
 }
 
