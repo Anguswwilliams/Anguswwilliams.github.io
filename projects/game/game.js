@@ -114,7 +114,14 @@ function thebox() {
     waitForInput(processInput);
 }
 
+function escape() {
+    clear();
+    print("\nYou push the emergency door open.");
+    print("\nFresh air rushes in.");
+    print("\nYou escaped the school!");
 
+    gameActive = false;
+}
 
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you
