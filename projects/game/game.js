@@ -8,7 +8,7 @@ let gameActive = true; //this variable is required.
 
 
 //Make one function for each location
-function locationA() {
+function classroom() {
     clear();
     print("\nYou are in location A!");
     print("\nWhere do you want to go next? Say one of these choices:" +
@@ -25,7 +25,7 @@ function locationA() {
     waitForInput(processInput);
 }
 
-function locationB() {
+function hallway() {
     clear();
     print("\nYou are in location B!");
     print("\nWhere do you want to go next? Say one of these choices:" +
@@ -42,7 +42,58 @@ function locationB() {
     waitForInput(processInput);
 }
 
-function locationC() {
+function library() {
+    clear();
+    print("\nYou are in location C!");
+    print("\nWhere do you want to go next? Say one of these choices:" +
+        "\n\tlocationB");
+    
+    function processInput(input){
+        if (input.toLowerCase() === "locationb") {
+            locationB();
+        } else {
+            stayHere();
+            waitThenCall(locationC);
+        }
+    }
+    waitForInput(processInput);
+}
+
+function commons() {
+    clear();
+    print("\nYou are in location C!");
+    print("\nWhere do you want to go next? Say one of these choices:" +
+        "\n\tlocationB");
+    
+    function processInput(input){
+        if (input.toLowerCase() === "locationb") {
+            locationB();
+        } else {
+            stayHere();
+            waitThenCall(locationC);
+        }
+    }
+    waitForInput(processInput);
+}
+
+function scienceroom() {
+    clear();
+    print("\nYou are in location C!");
+    print("\nWhere do you want to go next? Say one of these choices:" +
+        "\n\tlocationB");
+    
+    function processInput(input){
+        if (input.toLowerCase() === "locationb") {
+            locationB();
+        } else {
+            stayHere();
+            waitThenCall(locationC);
+        }
+    }
+    waitForInput(processInput);
+}
+
+function thebox() {
     clear();
     print("\nYou are in location C!");
     print("\nWhere do you want to go next? Say one of these choices:" +
