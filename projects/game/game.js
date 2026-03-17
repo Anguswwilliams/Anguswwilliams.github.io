@@ -44,9 +44,10 @@ function hallway() {
 
 function library() {
     clear();
-    print("\nYou are in location C!");
-    print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tlocationB");
+    print("\nYou enter the library.");
+    print("\nThe library is on fire and all the books ae buring. You also see a golden key laying in the corner of the room...");  print("\nWhere do you want to go next? Say one of these choices:" +
+    print("\n\tScience room");
+    print("\n\tHallway");
     
     function processInput(input){
         if (input.toLowerCase() === "locationb") {
