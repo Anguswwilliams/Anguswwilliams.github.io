@@ -1,15 +1,9 @@
 # Escape From School
 
-
-
-
-
-
-
-
-
-
-
-Cafeteria --- Hallway --- Gym --- Emergency Exit
+              [Science Lab]
                     |
-               Classroom
+               [Library]
+                    |
+[Cafeteria] --- [Hallway] --- [Gym] --- [Emergency Exit]
+                    |
+               [Classroom]
