@@ -81,20 +81,21 @@ function commons() {
 
 function scienceroom() {
     clear();
-    print("\nYou are in location C!");
+    print("\nThere is a chemical fire");
     print("\nWhere do you want to go next? Say one of these choices:" +
         "\n\tlocationB");
     
-    function processInput(input){
-        if (input.toLowerCase() === "locationb") {
-            locationB();
+ function processInput(input){
+        if (input.toLowerCase() === "library") {
+            library();
         } else {
             stayHere();
-            waitThenCall(locationC);
+            waitThenCall(scienceROOM);
         }
     }
     waitForInput(processInput);
 }
+
 
 function thebox() {
     clear();
@@ -112,6 +113,8 @@ function thebox() {
     }
     waitForInput(processInput);
 }
+
+
 
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you
