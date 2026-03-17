@@ -102,7 +102,7 @@ function commons() {
 function thebox() {
     clear();
 
-    print("You enter the gym, known as the Box.");
+    print("You enter the box.");
     print("The ceiling is collapsed, but there is a large window that is cracked and climbable.");
 
     print("");
