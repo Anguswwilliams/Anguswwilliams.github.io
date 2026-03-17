@@ -30,7 +30,7 @@ function classroom() {
 function hallway() {
     clear();
 
-    print("You step into a dank hallway.");
+    print("You step into a dark hallway.");
     print("A shaft of light shines through a small crack in the broken roof.");
     print("There are only three doors that are not caved in.");
 
@@ -64,7 +64,6 @@ function library() {
 
     print("You enter the library.");
     print("The books are on fire and you spot a small golden key in the far corner of the room.");
-    print("This room does not lead anywhere else.");
 
     print("");
     print("Type hallway to return.");
