@@ -10,9 +10,7 @@ let gameActive = true; //this variable is required.
 //Make one function for each location
 function classroom() {
     clear();
-    print("\nYou are in location A!");
-    print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tlocationB");
+    print("\nAfter the earthquake you were trapped inside of Brickston High School and the front entrance caved in, your objective is to navigate through the rooms and try to escape. Good luck!");
     
     function processInput(input){
         if (input.toLowerCase() === "locationb") {
