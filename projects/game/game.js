@@ -5,14 +5,14 @@ function classroom() {
     print("\nAfter the earthquake you were trapped inside of Brickston High School and the front entrance caved in, your objective is to navigate through the rooms and try to escape. Good luck!");
 
     print("\nWhere do you want to go?");
-    print("\n\tthe Hallway...
-          ");
+    print("\n\tthe Hallway...");
+
     function processInput(input){
-        if (input.toLowerCase() === "locationb") {
-            locationB();
+        if (input.toLowerCase() === "hallway") {
+            hallway();
         } else {
             stayHere();
-            waitThenCall(locationA);
+            waitThenCall(clssroom);
         }
     }
     waitForInput(processInput);
@@ -20,7 +20,7 @@ function classroom() {
 
 function hallway() {
     clear();
-    print("\nYou are in location B!");
+    print("\nYou exit the room and find yourself in a dark hallway, there is a faint shaft of light peeking out from what used to be the roof, and you see four open doors that are not caved in.");
     print("\nWhere do you want to go next? Say one of these choices:" +
         "\n\tlocationC");
     
