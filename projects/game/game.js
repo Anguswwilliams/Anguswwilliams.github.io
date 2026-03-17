@@ -50,11 +50,13 @@ function library() {
     print("\n\tHallway");
     
     function processInput(input){
-        if (input.toLowerCase() === "locationb") {
-            locationB();
+        if (input.toLowerCase() === "hallway") {
+            Hallway();
+         if (input.toLowerCase() === "science room") {
+            ScienceRoom();
         } else {
             stayHere();
-            waitThenCall(locationC);
+            waitThenCall(Library);
         }
     }
     waitForInput(processInput);
