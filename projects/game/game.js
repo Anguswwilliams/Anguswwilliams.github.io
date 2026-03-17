@@ -1,5 +1,10 @@
 let gameActive = true;
 
+function start(){
+    clear();
+    print("Escape From School.");
+    print("Type enter to begin.");
+
 function classroom() {
     clear();
 
@@ -131,11 +136,6 @@ function winGame() {
 
     gameActive = false;
 }
-
-function start(){
-    clear();
-    print("Escape From School.");
-    print("Press enter to begin.");
 
     waitForInput(function(){
         classroom();
