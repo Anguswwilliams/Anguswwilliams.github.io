@@ -1,13 +1,5 @@
-let gameActive = true; //this variable is required. 
-                       //to stop the game, set it to false.
+let gameActive = true; 
 
-//Declare your other global variables here
-
-
-//If you need, add any "helper" functions here
-
-
-//Make one function for each location
 function classroom() {
     clear();
     print("\nAfter the earthquake you were trapped inside of Brickston High School and the front entrance caved in, your objective is to navigate through the rooms and try to escape. Good luck!");
