@@ -61,6 +61,8 @@ function draw() {
 }
 
 function startGame() {
+  document.addEventListener("keydown", keyDownHandler);
+document.addEventListener("keyup", keyUpHandler);
   setInterval(draw, 10);
 }
 
