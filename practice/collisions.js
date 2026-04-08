@@ -13,7 +13,7 @@ function clickHandler(e){
        && mouseY > junk_max_y
        && mouseY > junk_min_y){
       j.alive=false;
-
+    }
   }
 }
 
