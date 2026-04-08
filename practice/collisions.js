@@ -8,6 +8,11 @@ function clickHandler(e){
 
     //TODO: write some code here that checks whether
     //(mouseX, mouseY) is inside j
+    if(mouse < junk_max_x 
+       && mouseX > junk_min_x
+       && mouseY > junk_max_y
+       && mouseY > junk_min_y){
+      j.alive=false;
 
   }
 }
