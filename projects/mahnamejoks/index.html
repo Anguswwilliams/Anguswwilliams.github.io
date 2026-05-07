@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="Assets/World/main.js"></script>
+    <script type="module" src="Assets/World/maps.js"></script>
+    <link rel="icon" href="Assets/Art/mage-warlock.png">
+    <title>Game Project</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+<img src="Assets/Art/plains.png" id="plains-bg" alt="Plains Map" style="display:none;">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            overflow: hidden;
+            
+        }
+
+
+        .pixelify-sans {
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        }
+        canvas {
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+
+        #score {
+            width: fit-content;
+            height: clamp(30px, 6vw, 200px);
+            background-color: white;
+            border: 5px solid black;
+            font-family: "Pixelify Sans", sans-serif;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 5vw;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="mapDesc" style="font-family:Arial, Helvetica, sans-serif; text-align: center; background-color: black; width: 70vw; height: 30vh; border-radius: 20px; opacity: 0; position: absolute; top: 50; left: 25; outline: 5px solid white;"></div>
+<canvas id="canvas" width="800" height="800"></canvas>
+    <div id="score" class="pixelify-sans">Score: 0</div>
+    <div id="instructions" onClick="document.getElementById('instructions').style.opacity = 0;" class="pixelify-sans" style="position: absolute; top: 10px; left: 10px; background-color: white; border: 5px solid black; padding: 10px; width: 100; height: fit-content;">
+        <p>Welcome</p>
+        <ul>
+            <li>Arrow Keys and IJKL to shoot</li>
+            <li>WASD to move</li>
+            <li>Defeat all enemies to progress through waves.</li>
+            <li>Earn points for each enemy defeated.</li>
+            <li>Earn power ups with each wave completed.</li>
+            <li style="font-size: 10px;">Click this box to hide instructions.</li>
+        </ul>
+    </div>
+    <div id="waveInfo" class="pixelify-sans" style="position: absolute; top: 10px; right: 10px; padding: 10px; width: fit-content; height: fit-content; margin-right: 40px;">
+        <h2 id="waveNumber">Wave: 1</h2>
+     
+    </div>
+    <div id ="powerUpInfo" class="pixelify-sans" style="position: absolute; top: 1000px; right: center; padding: 10px; width: 50vw; height: fit-content; margin-right: 40px; border: 5px solid black; background-color: white;">
+        <h2 style="text-align: center;" id="powerUpName">Power Up Options:</h2>
+        <div id="threeOptions">
+            <div id="optionOne" style="width: 30%; height: 40vh; float: left; text-align: center; border: 3px solid black; margin-right: 1.5%;">Option 1</div>
+            <div id="optionTwo" style="width: 30%; height: 40vh; float: left; text-align: center; border: 3px solid black; margin-right: 1.5%;">Option 2</div>
+            <div id="optionThree" style="width: 30%; height: 40vh; float: left; text-align: center; border: 3px solid black;">Option 3</div>
+        </div>
+    </div>
+
+
+    <div id="Healthbar">
+        <canvas id="healthCanvas" width="200" height="30" style="border: 3px solid black; background-color: rgb(255, 0, 0); position: absolute; bottom: 10px; right: 20px; "></canvas>
+    </div>
+
+    <div id="deathScreen" class="pixelify-sans" style="position: absolute; top: center; right: center; padding: 10px; width: fit-content; height: fit-content; margin-right: 40px; opacity: 0;">
+        <h1 style="text-align: center; font-size: 50px;" id="waveNumber">You are dead</h1>
+     
+    </div> <!-- temp -->
+        <div id="winScreen" class="pixelify-sans" style="position: absolute; top: center; right: center; padding: 10px; width: fit-content; height: fit-content; margin-right: 40px; opacity: 0;">
+        <h1 style="text-align: center; font-size: 50px;" id="die">You have become Jacques!</h1>
+     
+    </div>
+
+
+    <div id="damage" class="pixelify-sans" style="background-image: radial-gradient(circle, transparent, #ff0000); position: absolute; top: 0; right: 0; padding: 10px; width: 100vw; height: 100vh; opacity: 0; pointer-events: none;">
+    </div>
+
+    <div id="killwall" class="pixelify-sans" style="position: absolute; top: 0; left: 0; padding: 0; width: 0; height: 10px; opacity: 1; pointer-events: none; background-color: rgb(255, 225, 0);">
+        
+</body>
+</html>
