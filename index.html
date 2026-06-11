@@ -14,26 +14,16 @@
       background-position: center;
       background-repeat: no-repeat;
       background-color: #278c27;
+      color: #fff;
       line-height: 1.6;
-    }
-    h1, h2, h3, p, li, a, footer {
-      color: transparent;
-      background-image: linear-gradient(90deg, #ff0057, #ffbd00, #00ffec, #7c00ff, #ff0057);
-      background-size: 300% 300%;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: chroma 6s linear infinite;
-    }
-    @keyframes chroma {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
     }
     .container {
       max-width: 960px;
       margin: 0 auto;
       padding: 15px;
+    }
+    section {
+      color: #111;
     }
     h1,
     h2,
@@ -68,6 +58,24 @@
     a:hover {
       text-decoration: underline;
     }
+    .button-link {
+      display: inline-block;
+      padding: 10px 18px;
+      background: rgba(255, 255, 255, 0.95);
+      color: #0b3d0d;
+      border: 2px solid #0b3d0d;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+      background-clip: border-box;
+      -webkit-background-clip: border-box;
+      -webkit-text-fill-color: initial;
+    }
+    .button-link:hover {
+      background: #0b3d0d;
+      color: #fff;
+      transform: translateY(-1px);
+    }
     .project {
       margin-bottom: 10px;
       padding-bottom: 10px;
@@ -82,7 +90,7 @@
     }
     footer {
       text-align: center;
-      color: #0e180f;
+      color: #fff;
       font-size: 0.95rem;
     }
   </style>
@@ -91,7 +99,7 @@
   <div class="container">
     <header>
       <h1>Angus Williams</h1>
-      <p class="subtitle">Web developer</p>
+      <p class="subtitle">Experienced web developer interested in HTML, CSS, and JavaScript</p>
     </header>
 
     <section id="about">
@@ -114,13 +122,13 @@
       <article class="project">
         <h3>Client Website</h3>
         <p>Placeholder</p>
-        <p><a href="Projects/Client%20Website/index.html" target="_blank" rel="noopener">View project</a></p>
+        <p><a class="button-link" href="Projects/Client%20Website/index.html" target="_blank" rel="noopener">View project</a></p>
       </article>
 
       <article class="project">
         <h3>Group Game Project</h3>
         <p>Placeholder</p>
-        <p><a href="Projects/mahnamejoks/index.html" target="_blank" rel="noopener">View Group Game project</a></p>
+        <p><a class="button-link" href="Projects/mahnamejoks/index.html" target="_blank" rel="noopener">View Group Game project</a></p>
       </article>
     </section>
 
@@ -128,5 +136,10 @@
       <p>contact info</p>
     </footer>
   </div>
+  <script>
+    window.addEventListener('load', function() {
+      alert('Hi, wecome to my website!');
+    });
+  </script>
 </body>
 </html>
